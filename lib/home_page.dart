@@ -41,6 +41,21 @@ class HomePage extends StatelessWidget {
           ),
 
 
+          ListTile(
+            title: Text("iHealth CONNECT"),
+            onTap: () async {
+
+              final String iHealthUrl = "ihealth-layer://?action=1&cmd=1&addtype=1&deviceModel=100&scheme=crossappdemo&appId=cross_app_comms_demo_app&ver=100&orientation=2";
+
+              if (await canLaunch(iHealthUrl)) {
+                await launch(iHealthUrl);
+              } else {
+                throw "Can't launch iHealth CONNECT (ihealth-layer://).";
+              }
+            },
+          ),
+
+
 
         ],
       ),
