@@ -24,8 +24,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  # be able to call custom URLs of other apps
   url_launcher: ^5.2.5
-  
+
+  # allow our custom URL schem of 
+  uni_links: ^0.2.0
+
 
 dev_dependencies:
   flutter_test:

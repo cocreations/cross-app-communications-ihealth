@@ -54,7 +54,7 @@ class HomePage extends StatelessWidget {
                                         "&orientation=$IHEALTH_ORIENTATION_AUTO" +
                                         "&unit=$IHEALTH_UNIT_BloodPressureUnitMMHG" +
                                         "&scheme=crossappdemo" +
-                                        "&appId=cross_app_comms_demo_app" +
+                                        "&appId=com.example.cross_app_communications_ihealth" +
                                         "&ver=100";        
 
               if (await canLaunch(iHealthUrl)) {
