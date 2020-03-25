@@ -58,7 +58,9 @@ class HomePage extends StatelessWidget {
                                         "&ver=100";        
 
               if (await canLaunch(iHealthUrl)) {
-                await launch(iHealthUrl);
+                var result = await launch(iHealthUrl);
+                print('AND THE result ARE IN !!');
+                print(result);
               } else {
                 throw "Can't launch iHealth CONNECT (ihealth-layer://).";
               }
