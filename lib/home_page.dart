@@ -1,3 +1,4 @@
+import 'package:cross_app_communications_ihealth/ihealth_param_types.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -45,7 +46,16 @@ class HomePage extends StatelessWidget {
             title: Text("iHealth CONNECT"),
             onTap: () async {
 
-              final String iHealthUrl = "ihealth-layer://?action=1&cmd=1&addtype=1&deviceModel=100&scheme=crossappdemo&appId=cross_app_comms_demo_app&ver=100&orientation=2";
+              final String iHealthUrl = "ihealth-layer://" +
+                                        "?action=$IHEALTH_CMD_ADD_MEASURE" +
+                                        "&cmd=$IHEALTH_CMD_ADD_MEASURE" +
+                                        "&addtype=$IHEALTH_ADDTYPE_BTSCAN" +
+                                        "&deviceModel=$IHEALTH_DEVICEMODEL_BP5" +
+                                        "&orientation=$IHEALTH_ORIENTATION_AUTO" +
+                                        "&unit=$IHEALTH_UNIT_BloodPressureUnitMMHG" +
+                                        "&scheme=crossappdemo" +
+                                        "&appId=cross_app_comms_demo_app" +
+                                        "&ver=100";        
 
               if (await canLaunch(iHealthUrl)) {
                 await launch(iHealthUrl);
