@@ -67,7 +67,7 @@ print('--------------- we ARE in initUniLinks!!()');
           );
         } else if (snapshot.hasError) {
           // an error 
-          return Text("Unable to connect to the stream, man");
+          return Text("Unable to open the stream, man");
         } else {
           // spinner until the stream that listens for URL paths is ready
           return SizedBox(
