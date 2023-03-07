@@ -29,7 +29,7 @@ I am not affiliated with iHealth at all.
 
 Since you asked, my business is :
 
-[![CoCreations](./readme_assets/lOgO-noborder.png)](https://cocreations.com.au)
+[![CoCreations](./readme_assets/cc1.jpg)](https://cocreations.com.au)
 
 
 We develop awesome apps for Android and iOS, and would be happy to assist you with your development needs.
